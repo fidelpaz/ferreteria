@@ -33,14 +33,14 @@ int main() {
   Articulo Construccion[4] = {varilla, graba, arena, cemento};
 
   // 4. Electricidad
-  Articulo cable(83.00, 20,
-                 "Cable Electrico Phelps Dodge ACOMETIDA 3X2 500mts Rollo",
-                 UNIDAD);
+  Articulo cableElectrico(
+      83.00, 20, "Cable Electrico Phelps Dodge ACOMETIDA 3X2 500mts Rollo",
+      UNIDAD);
   Articulo cintaAislante(
       560.00, 3, "Cinta 3M 3/4plgx66 pies Scotch # 27 Fibra de Vidrio", UNIDAD);
   Articulo lampara(570, 5, "Lampara Para Techo 2322Boc", UNIDAD);
   Articulo manguera(6.15, 16, "Manguera 1/4plg", UNIDAD);
-  Articulo Electricidad[4] = {cable, cintaAislante, lampara, manguera};
+  Articulo Electricidad[4] = {cableElectrico, cintaAislante, lampara, manguera};
 
   // 5. Hogar
   Articulo cortina(1069.56, 8, "Cortina enrollable", UNIDAD);
@@ -60,12 +60,12 @@ int main() {
   Articulo* Inventario[][4] = {Herramientas, Fontaneria, Construccion,
                                Electricidad, Hogar,      Jardineria};
 
-  for (int i = 0; i < 6; i++) {
+  /* for (int i = 0; i < 6; i++) {
     for (int j = 0; j < 4; j++) {
       cout << i + 1 << " - " << j + 1 << " Nombre: " << Inventario[i][j]->nombre
            << endl;
     }
-  }
+  } */
 
   int opcion = 0;
   do {
@@ -76,30 +76,30 @@ int main() {
 
     switch (opcion) {
       case 1:
-        cout << endl << "Vender articulo." << endl;
+        // Función para vender articulo
         break;
 
       case 2:
-        cout << endl << "Consulta de precios." << endl;
+        // Función de consulta de precios
         break;
 
       case 3:
-        cout << endl << "Ver inventario." << endl;
+        // Función de ver inventario.
         break;
 
       case 4:
-        cout << endl << "Ventas por producto." << endl;
+        // Función de ventas por produto.
         break;
 
       case 5:
-        cout << endl << "Total ventas detalle." << endl;
+        // Función para el total de ventasd de detalle.
         break;
       case 6:
         jugarPega3();
 
         break;
       case 7:
-        cout << endl << "Mostrar creditos" << endl;
+        // Funión para mostrar los créditos.
         break;
 
       default:
