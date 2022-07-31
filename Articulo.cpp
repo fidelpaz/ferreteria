@@ -21,17 +21,18 @@ enum Medida {
 
 class Articulo {
  public:
-  double precio = 0.0;
-  int cantidad = 0;
-  string nombre = "";
-  Medida medida = UNIDAD;
+  double precio;
+  int cantidad;
+  string nombre;
+  Medida medida;
 
-  // La letra "p" al final indica que son parámetros
-  Articulo(double precioP, int cantidadP, string nombreP, Medida medidaP) {
+  // La letra "p" al final indica que son parámetros los cuales tienen valores
+  // predeterminados
+  Articulo(double precioP = 0.0, int cantidadP = 0,
+           string nombreP = "Producto generico", Medida medidaP = UNIDAD) {
     precio = precioP;
     nombre = nombreP;
     cantidad = cantidadP;
     medida = medidaP;
   }
-  Articulo() {}
 };
