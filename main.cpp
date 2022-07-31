@@ -58,7 +58,7 @@ int main() {
         cout << endl << "Opcion invalida" << endl;
         break;
     }
-
+cout<<"Hola"<<endl;
   } while (opcion != 7);
 
   return 0;
