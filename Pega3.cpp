@@ -13,16 +13,16 @@ void jugarPega3() {
           "numeros.";
   do {
     cout << endl << "Elige la dificultad en la que desees jugar: " << endl;
-    cout << "1.Easy.<\n2.Medium.\n3.Hard.\n4.Salir" << endl;
+    cout << "1.Easy.\n2.Medium.\n3.Hard.\n4.Salir" << endl;
     cout << "Dificultad: ";
     cin >> nivel;
     switch (nivel) {
       case 1:
-        a = 1 + rand()%4;
-        b= 1 + rand()%4;
-       c= 1 + rand()%4
+        a = 1 + rand() % 4;
+        b = 1 + rand() % 4;
+        c = 1 + rand() % 4;
 
-        cout << "DIFICULTAD FACIL, ELIJE TRES NUMEROS DEL 1 AL 3, SUERTE ;)"
+        cout << "DIFICULTAD FACIL, ELIJE TRES NUMEROS DEL 1 AL 3, SUERTE"
              << endl
              << endl;
         cout << "Digite su primer numero: ";
@@ -38,9 +38,9 @@ void jugarPega3() {
         break;
 
       case 2:
-        a= 1 + rand()%7;
-        b= 1 + rand()%7;
-        c= 1 + rand()%7;
+        a = 1 + rand() % 7;
+        b = 1 + rand() % 7;
+        c = 1 + rand() % 7;
         cout << "DIFICULTAD MEDIA, ELIJE TRES NUMEROS DEL 1 AL 6, SUERTE ;)"
              << endl
              << endl;
@@ -56,9 +56,9 @@ void jugarPega3() {
           cout << "Ups, has perdido" << endl;
         break;
       case 3:
-        a= 1 + rand()%11;
-        b= 1 + rand()%11;
-        c= 1 + rand()%11;
+        a = 1 + rand() % 11;
+        b = 1 + rand() % 11;
+        c = 1 + rand() % 11;
         cout << "DIFICULTAD DIFICIL, ELIJE TRES NUMEROS DEL 1 AL 10, SUERTE ;)"
              << endl
              << endl;
