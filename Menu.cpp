@@ -10,4 +10,5 @@ void mostrarMenu() {
   cout << "5. Total ventas detalle." << endl;
   cout << "6. Juego pega 3." << endl;
   cout << "7. Salir. " << endl;
+  cout << endl;
 };
