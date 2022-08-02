@@ -2,12 +2,14 @@
   "cSpell.language": "en,es-ES",
   "files.associations": {
     "iostream": "cpp",
-    "ostream": "cpp"
+    "ostream": "cpp",
+    "xstring": "cpp"
   },
   "cSpell.words": [
     "creditos",
     "desague",
     "opcion"
   ],
-  "cSpell.enabled": false
+  "cSpell.enabled": false,
+  "docwriter.language": "Spanish"
 }
