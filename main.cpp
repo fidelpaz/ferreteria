@@ -55,12 +55,21 @@ Articulo pala(300.12, 16, "Pala truper", UNIDAD);
 Articulo azadon(155.17, 12, "Azadon de 110 cm con mango", UNIDAD);
 Articulo machete(88.19, 6, "Machete truper", UNIDAD);
 Articulo Jardineria[4] = {pico, pala, azadon, machete};
+
+/**
+ * Esta función solicita al usuario el número de producto y la cantidad del
+ * producto a comprar
+ *
+ * @param producto El número de producto
+ * @param cantidad la cantidad del producto que el usuario quiere comprar
+ */
 void venderArticulo(int& producto, int& cantidad) {
   cout << "Que producto va  acomprar?: ";
   cin >> producto;
   cout << "Cuantos va  a comprar?: ";
   cin >> cantidad;
 }
+
 /**
  * Toma una matriz de objetos de Articulo y una cadena, e imprime la cadena y el
  * contenido de la matriz.
@@ -72,9 +81,11 @@ void mostrarCategoria(Articulo* arrayCategoria, string nombreCategoria) {
   int producto, cantidad = 0;
   cout << nombreCategoria << endl;
   for (int i = 0; i < 4; i++) {
-    cout << i + 1 << ". Nombre: " << arrayCategoria[i].nombre << endl;
-    cout << "Unidades disponibles: " << arrayCategoria[i].cantidad << endl;
-    cout << "Precio por unidad: " << arrayCategoria[i].precio << endl << endl;
+    if (!(arrayCategoria[i].cantidad == 0)) {
+      cout << i + 1 << ". Nombre: " << arrayCategoria[i].nombre << endl;
+      cout << "Unidades disponibles: " << arrayCategoria[i].cantidad << endl;
+      cout << "Precio por unidad: " << arrayCategoria[i].precio << endl << endl;
+    }
   }
   cout << endl;
   venderArticulo(producto, cantidad);
