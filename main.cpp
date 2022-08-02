@@ -66,8 +66,13 @@ Articulo Jardineria[4] = {pico, pala, azadon, machete};
 void venderArticulo(int& producto, int& cantidad) {
   cout << "Que producto va  acomprar?: ";
   cin >> producto;
-  cout << "Cuantos va  a comprar?: ";
-  cin >> cantidad;
+  if (producto >= 1 && producto <= 4) {
+    cout << "Cuantos va  a comprar?: ";
+    cin >> cantidad;
+
+  } else {
+    cout << "Ha puesto un numero invalido ;(" << endl;
+  }
 }
 
 /**
@@ -89,9 +94,11 @@ void mostrarCategoria(Articulo* arrayCategoria, string nombreCategoria) {
   }
   cout << endl;
   venderArticulo(producto, cantidad);
-  if (cantidad < arrayCategoria[producto - 1].cantidad) {
+  if (cantidad <= arrayCategoria[producto - 1].cantidad) {
     arrayCategoria[producto - 1].cantidad -= cantidad;
-    cout << "Se a realizado su compra :)" << endl;
+    if (producto >= 1 && producto <= 4) {
+      cout << "Se ha realizado su compra ;)" << endl;
+    }
   } else {
     int deseaComprarMax;
     cout << "La cantidad maxima que tenemos es: "
