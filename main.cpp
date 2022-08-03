@@ -1,6 +1,6 @@
 #include <iostream>
 #include <string>
-// Esto lo hacemos para importar los archivos .cpp que creamos
+// 💡 Los archivos extra deben ser con extensión ".h"
 #include "Articulo.h"
 #include "Inventario.h"
 #include "Menu.h"
