@@ -10,6 +10,7 @@
 
 using namespace std;
 int main() {
+  cout << "Hola mundo" << endl;
   int opcion = 0;
   do {
     // Mostramos las instrucciones
